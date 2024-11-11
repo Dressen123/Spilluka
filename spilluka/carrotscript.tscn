@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://8nhosrk0yrlf"]
+
+[ext_resource type="Script" path="res://carrotscript.gd" id="1_4yswj"]
+[ext_resource type="Script" path="res://timer.gd" id="1_j4gmw"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_4yswj")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+script = ExtResource("1_j4gmw")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
