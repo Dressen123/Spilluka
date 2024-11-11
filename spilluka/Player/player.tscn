@@ -29,5 +29,6 @@ sprite_frames = SubResource("SpriteFrames_ofdna")
 animation = &"idle"
 
 [node name="collission" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-0.5, 3)
 shape = SubResource("RectangleShape2D_qxhug")
