@@ -24,5 +24,10 @@ sources/0 = SubResource("TileSetAtlasSource_rbpdb")
 position = Vector2(1, -21)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -30)
-zoom = Vector2(5, 5)
+position = Vector2(-1, -34)
+zoom = Vector2(3, 3)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_aouxk")
+format = 2
+layer_0/tile_data = PackedInt32Array(-131074, 0, 0)
