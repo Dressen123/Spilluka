@@ -1,7 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://di735ar7i00pc"]
+[gd_scene load_steps=6 format=3 uid="uid://di735ar7i00pc"]
 
-[ext_resource type="PackedScene" uid="uid://d2vq3wxx1aivd" path="res://platform.tscn" id="1_f3xrt"]
+[ext_resource type="PackedScene" uid="uid://bxmwo6j6pcgpo" path="res://platform.tscn" id="1_f3xrt"]
 [ext_resource type="PackedScene" uid="uid://cnh7espuq6edg" path="res://Player/player.tscn" id="1_q38qu"]
+[ext_resource type="Texture2D" uid="uid://defa8k5786obb" path="res://platform.png" id="3_1moup"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rbpdb"]
+texture = ExtResource("3_1moup")
+texture_region_size = Vector2i(32, 16)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.9099, 7.77817, -15.8215, -7.6014, 16.0867, -7.51301, 15.9983, 7.95495)
+0:0/0/physics_layer_0/polygon_0/one_way = true
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_aouxk"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_rbpdb")
 
 [node name="world" type="Node2D"]
 
