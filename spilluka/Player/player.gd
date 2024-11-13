@@ -23,3 +23,6 @@ func movement():
 		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
+	
+	
+	
